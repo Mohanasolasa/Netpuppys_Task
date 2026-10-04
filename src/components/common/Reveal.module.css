@@ -1,0 +1,44 @@
+.revealWrapper {
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base hidden states */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.scale {
+  opacity: 0;
+  transform: scale(0.94);
+}
+
+.fade {
+  opacity: 0;
+}
+
+/* Revealed state */
+.visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revealWrapper {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

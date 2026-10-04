@@ -1,0 +1,41 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* TT Chocolates fallback using Inter */
+@font-face {
+  font-family: 'TT Chocolates';
+  src: local('Inter'), local('Inter-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mirador serif fallback using Playfair Display */
+@font-face {
+  font-family: 'Mirador';
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* PFDinTextPro fallback using Inter Condensed */
+@font-face {
+  font-family: 'PFDinTextPro';
+  src: local('Inter'), local('Inter-Black');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Utility classes */
+.font-tt-chocolates {
+  font-family: 'Inter', 'TT Chocolates', sans-serif;
+}
+
+.font-mirador {
+  font-family: 'Playfair Display', 'Mirador', serif;
+}
+
+.font-display {
+  font-family: 'Inter', 'PFDinTextPro', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}

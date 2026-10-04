@@ -1,0 +1,86 @@
+export const facilitiesData = [
+  {
+    id: 'sports-complex',
+    name: '16+ Olympic Sports Complex',
+    category: 'Sports & Athletics',
+    badge: 'Featured Facility',
+    size: 'Spanning multiple outdoor & indoor grounds',
+    description:
+      'Home to world-class facilities for 16+ sports including Archery, Taekwondo, Swimming, Horse Riding/Polo, Squash, Badminton, Shooting Range, Cricket pitch, and Basketball courts with NIS-trained coaches.',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=85',
+    features: ['16+ Olympic disciplines', 'Indoor shooting & archery range', 'Full-size football & cricket turf', 'Semi-Olympic swimming pool'],
+    isFeatured: true,
+  },
+  {
+    id: 'smart-classrooms',
+    name: 'Smart Digital Classrooms',
+    category: 'Academics',
+    badge: 'Tech-Enabled',
+    size: 'Ergonomic climate-controlled spaces',
+    description:
+      'Interactive digital whiteboards, audiovisual learning pods, and ergonomic seating that foster collaborative discussions and multimedia-enhanced learning.',
+    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
+    features: ['Smart touch displays', 'High-speed secure campus Wi-Fi', 'Audio-visual acoustic design'],
+    isFeatured: false,
+  },
+  {
+    id: 'science-labs',
+    name: 'Advanced Science & STEM Labs',
+    category: 'Innovation',
+    badge: 'Research & Discovery',
+    size: 'Physics, Chemistry, Biology & Robotics',
+    description:
+      'State-of-the-art analytical equipment, robotics workstations, and safety-certified experimental apparatus allowing students to explore beyond the textbook.',
+    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80',
+    features: ['Modern apparatus & safety hoods', 'Robotics & AI maker space', 'Individual experiment stations'],
+    isFeatured: false,
+  },
+  {
+    id: 'central-library',
+    name: 'Knowledge Resource Center',
+    category: 'Reading & Research',
+    badge: '10,000+ Volumes',
+    size: 'Multi-tiered quiet reading bays',
+    description:
+      'An expansive library housing fiction, non-fiction, academic journals, global periodicals, and digital Kindle terminals to inspire a lifelong love for reading.',
+    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
+    features: ['10,000+ books & periodicals', 'Quiet individual carrels', 'Digital archive & e-library'],
+    isFeatured: false,
+  },
+  {
+    id: 'residential-hostels',
+    name: 'Co-Ed Boarding Residences',
+    category: 'Residential Life',
+    badge: 'Home Away From Home',
+    size: 'Separate Boys & Girls wings',
+    description:
+      'Comfortable, air-cooled dormitories and twin-sharing rooms overseen by resident housemasters, tutors, and pastoral matrons ensuring comfort, hygiene, and security.',
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80',
+    features: ['Separate secure wings', 'Resident houseparents & tutors', 'Central study rooms & lounges'],
+    isFeatured: false,
+  },
+  {
+    id: 'dining-hall',
+    name: 'Multi-Cuisine Organic Dining',
+    category: 'Nutrition & Wellness',
+    badge: 'Dietician-Supervised',
+    size: '400+ seat hygienic dining space',
+    description:
+      'Nutritious, vegetarian and non-vegetarian meals prepared in an ultra-clean mechanized kitchen with farm-fresh organic produce tailored to active growing students.',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+    features: ['5 balanced meals daily', 'FSSAI certified hygiene', 'Strict nutritional guidelines'],
+    isFeatured: false,
+  },
+  {
+    id: 'medical-infirmary',
+    name: '24/7 Medical Care Infirmary',
+    category: 'Health & Safety',
+    badge: 'Round-the-Clock',
+    size: 'In-house resident doctor & nurses',
+    description:
+      'Dedicated health center with resident nursing staff, visiting specialized physicians, and immediate ambulance tie-ups with leading super-specialty hospitals in Dehradun.',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80',
+    features: ['Resident nursing team', 'Emergency ambulance standby', 'Regular health & dental checkups'],
+    isFeatured: false,
+  },
+];

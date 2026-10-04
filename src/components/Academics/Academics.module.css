@@ -1,0 +1,416 @@
+.academicsSection {
+  padding: 100px 0;
+  background: #fbfbfd;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max, 1280px);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 56px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--tis-red, #b90124);
+  margin-bottom: 12px;
+}
+
+.heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(32px, 3.4vw, 46px);
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: var(--tis-red, #b90124);
+}
+
+.subheading {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #555555;
+  margin-bottom: 36px;
+}
+
+/* Educational Continuum Timeline Indicator */
+.journeyTrack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.journeyNode {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.journeyNode:last-child {
+  flex: 0;
+}
+
+.journeyStepBadge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid var(--tis-gold, #c09d59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.journeyStepNumber {
+  font-size: 11px;
+  font-weight: 800;
+  color: #8c6a28;
+}
+
+.journeyStepPhase {
+  font-size: 12px;
+  font-weight: 700;
+  color: #444444;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.journeyConnector {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(192, 157, 89, 0.4) 0%, rgba(185, 1, 36, 0.25) 100%);
+  margin: 0 16px;
+}
+
+/* Continuum Cards Grid */
+.continuumGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.cardRevealWrapper {
+  height: 100%;
+}
+
+.academicCard {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.academicCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  border-color: rgba(185, 1, 36, 0.2);
+}
+
+.cardTopBar {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f6f6;
+  background: #fdfdfd;
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stepNum {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--tis-gold, #c09d59);
+}
+
+.stepDot {
+  font-size: 10px;
+  color: #cccccc;
+}
+
+.stageName {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.classesPill {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--tis-red, #b90124);
+  background: rgba(185, 1, 36, 0.06);
+  padding: 3px 8px;
+  border-radius: 9999px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.academicCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.imageFade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+}
+
+.ageBadge {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cardBody {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.highlightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  color: #4b4b4b;
+  line-height: 1.45;
+}
+
+.checkIcon {
+  color: var(--tis-red, #b90124);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+.learnMoreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 9px 12px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #2c2c2c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.learnMoreBtn:hover {
+  background: var(--tis-red, #b90124);
+  color: #ffffff;
+}
+
+/* Modal */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modalContent {
+  background: #ffffff;
+  border-radius: 20px;
+  width: min(600px, 94vw);
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  animation: modalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modalBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(185, 1, 36, 0.1);
+  color: var(--tis-red, #b90124);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.modalHeading {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.modalSub {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.modalDescription {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.modalHighlightsTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.modalHighlights {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 24px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalEnquireBtn {
+  padding: 12px 24px;
+  background: var(--tis-red, #b90124);
+  color: #ffffff;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .continuumGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journeyTrack {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .continuumGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .academicsSection {
+    padding: 70px 0;
+  }
+}

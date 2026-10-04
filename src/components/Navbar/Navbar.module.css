@@ -1,0 +1,427 @@
+/* Top Utility / Admissions Alert Bar */
+.topUtilityBar {
+  background: #181818;
+  color: #e5e5e5;
+  font-size: 12.5px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1001;
+}
+
+.topUtilityInner {
+  max-width: var(--container-max, 1280px);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.topAlert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #f3f3f3;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.topLinks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #c9c9c9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.topLink:hover {
+  color: #ffffff;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  padding: 12px 0;
+}
+
+.navbarScrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+}
+
+.navContainer {
+  max-width: var(--container-max, 1280px);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.brandLogo:hover {
+  transform: scale(1.02);
+}
+
+.logoImg {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Desktop Nav */
+.desktopNav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--tis-red, #b90124);
+  background: rgba(185, 1, 36, 0.04);
+}
+
+.navLinkActive {
+  color: var(--tis-red, #b90124);
+  font-weight: 700;
+  background: rgba(185, 1, 36, 0.05);
+}
+
+.activePill {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  right: 10px;
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--tis-red, #b90124), var(--tis-gold, #c09d59));
+  border-radius: 2px;
+}
+
+/* Action Group */
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.enquireButton {
+  padding: 8px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--tis-dark, #1c1c1c);
+  background: transparent;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.enquireButton:hover {
+  border-color: var(--tis-red, #b90124);
+  color: var(--tis-red, #b90124);
+  background: rgba(185, 1, 36, 0.04);
+}
+
+.applyButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 20px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--tis-red, #b90124) 0%, #8c0119 100%);
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(185, 1, 36, 0.25);
+  transition: all 0.25s ease;
+}
+
+.applyButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(185, 1, 36, 0.38);
+  background: linear-gradient(135deg, #d4012a 0%, #b90124 100%);
+}
+
+/* Mobile Hamburger Button */
+.hamburgerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.hamburgerBtn:hover {
+  background: #ebebeb;
+}
+
+.hamburgerLine {
+  width: 20px;
+  height: 2px;
+  background: #1c1c1c;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hamburgerActive .hamburgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerActive .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerActive .hamburgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Navigation Drawer */
+.mobileDrawer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  visibility: hidden;
+  transition: visibility 0.35s ease;
+}
+
+.mobileDrawerOpen {
+  visibility: visible;
+}
+
+.mobileBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.mobileDrawerOpen .mobileBackdrop {
+  opacity: 1;
+}
+
+.mobilePanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(85vw, 380px);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.mobileDrawerOpen .mobilePanel {
+  transform: translateX(0);
+}
+
+.mobilePanelHeader {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobileCloseBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f7f7f7;
+  color: #333333;
+  cursor: pointer;
+}
+
+.mobileNavLinks {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.mobileNavLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  background: rgba(185, 1, 36, 0.06);
+  color: var(--tis-red, #b90124);
+  padding-left: 20px;
+}
+
+.mobilePanelFooter {
+  padding: 24px 20px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobileApplyBtn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  background: var(--tis-red, #b90124);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(185, 1, 36, 0.3);
+}
+
+.mobileContactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobileContactCard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555555;
+  text-decoration: none;
+  padding: 8px 10px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+}
+
+.mobileContactCard strong {
+  color: #222222;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1080px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .hamburgerBtn {
+    display: flex;
+  }
+
+  .enquireButton {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .topUtilityBar {
+    display: none;
+  }
+
+  .navContainer {
+    padding: 0 20px;
+  }
+
+  .logoImg {
+    height: 40px;
+  }
+
+  .applyButton {
+    padding: 7px 15px;
+    font-size: 12.5px;
+  }
+}

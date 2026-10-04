@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <path d="M32 3 C48 3 60 11 60 26 C60 45 32 61 32 61 C32 61 4 45 4 26 C4 11 16 3 32 3 Z" fill="#b90124" stroke="#c09d59" stroke-width="2.5"/>
+  <path d="M32 7 C45 7 55 14 55 26 C55 41 32 55 32 55 C32 55 9 41 9 26 C9 14 19 7 32 7 Z" fill="none" stroke="#f6e8cc" stroke-width="1" opacity="0.6"/>
+  <!-- Golden Flame -->
+  <path d="M32 13 C34 17 38 20 38 24 C38 28 35 31 32 31 C29 31 26 28 26 24 C26 20 30 17 32 13 Z" fill="#c09d59"/>
+  <!-- Open Book -->
+  <path d="M20 35 C24 33 28 34 32 36 C36 34 40 33 44 35 L44 43 C40 41 36 42 32 44 C28 42 24 41 20 43 Z" fill="#ffffff"/>
+  <path d="M32 36 L32 44" stroke="#b90124" stroke-width="1.5"/>
+</svg>
